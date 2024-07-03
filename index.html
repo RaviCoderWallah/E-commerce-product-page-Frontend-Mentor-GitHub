@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ravi Verma">
+    <title>Frontend Mentor Project - E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-site">
+
+        <header>
+            <nav class="navbar">
+                <div class="navbar__navigation-side">
+                    <div class="menu-container">
+                        <div class="menu">
+                            <div class="menu-icon">
+                                <img src="icon-menu.svg" alt="Menu Icon" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-container">
+                        <img src="logo.svg" alt="Website Logo" loading="lazy">
+                    </div>
+                    <div class="navbar-menus">
+                        <ul class="navbar-menus__list">
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar__add-to-cart-side">
+                    <div class="cart-logo">
+                        <span id="product-number-element">2</span>
+                        <img src="icon-cart.svg" alt="Cart Icon" loading="lazy">
+                    </div>
+                    <div class="cart-user-profile">
+                        <img src="image-avatar.png" alt="Cart User Profile Image" loading="lazy">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="cart__hero-section">
+            <section class="cart__image-side">
+                <div class="cart__main-large-image">
+                    <img src="image-product-1.jpg" alt="Product-1 large image" loading="lazy">
+                </div>
+                <div class="cart__small-image">
+                    <div class="cart__other-images">
+                        <img src="image-product-1-thumbnail.jpg" alt="Product-1 small image" loading="lazy">
+                    </div>
+                    <div class="cart__other-images">
+                        <img src="image-product-2-thumbnail.jpg" alt="Product-2 small image" loading="lazy">
+                    </div>
+                    <div class="cart__other-images">
+                        <img src="image-product-3-thumbnail.jpg" alt="Product-3 small image" loading="lazy">
+                    </div>
+                    <div class="cart__other-images">
+                        <img src="image-product-4-thumbnail.jpg" alt="Product-4 small image" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="cart__details-side">
+                <div class="cart-details-text">
+                    <h3>sneaker company</h3>
+                    <h1>Fall Limitied Edition Sneakers</h1>
+                    <p>
+                        These low-profile seneakers are you perfect casual wear companion. Featuring a durable rubber
+                        outer sole, they'll withstand everything the weather can offer.
+                    </p>
+                </div>
+                <div class="cart-price">
+                    <div class="cart-price__with-offer">
+                        <h2>$
+                            <span id="product-amount">
+                                125.00
+                            </span>
+                        </h2>
+                        <p>50%</p>
+                    </div>
+                    <div class="cart-price__without-offer">
+                        <p>$250.00</p>
+                    </div>
+                </div>
+                <div class="add-cart-container">
+                    <div class="add-cart__number">
+                        <button id="add-cart__number-plus">
+                            <img src="icon-plus.svg" alt="Icon plus" loading="lazy">
+                        </button>
+                        <p id="add-cart_number-text">0</p>
+                        <button id="add-cart__number-minus">
+                            <img src="icon-minus.svg" alt="Icon minus" loading="lazy">
+                        </button>
+                    </div>
+                    <div class="add-cart__button">
+                        <button id="add-cart__btn">
+                            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                                    fill="#000" fill-rule="nonzero" />
+                            </svg>
+                            <a href="#">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="cart-navigation">
+            <div class="cart-heading">
+                <p>Cart</p>
+                <div class="close-icon">
+                    <img src="icon-close.svg" alt="Close Icon" loading="lazy">
+                </div>
+            </div>
+            <div class="cart-items">
+                <p id="empty-text">Your cart is empty.</p>
+                <div class="cart-items__overview">
+                    <div class="cart-items__image">
+                        <img src="image-product-1-thumbnail.jpg" alt="add cart image" loading="lazy">
+                    </div>
+                    <div class="cart-items__details">
+                        <p>Fall Limitied Editions Sneakers</p>
+                        <p id="final-amount-para"></p>
+                    </div>
+                    <div class="cart-items__delete">
+                        <img src="icon-delete.svg" alt="Delete Icon" loading="lazy">
+                    </div>
+                </div>
+                <div class="checkout-button">
+                    <button id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive-sidebar">
+            <div class="close-icon">
+                <img src="icon-close.svg" alt="Close Icon" loading="lazy">
+            </div>
+            <div class="navbar-list">
+                <ul>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
